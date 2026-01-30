@@ -3,8 +3,8 @@ const apps = [
         id: 1,
         name: "行为录制精灵",
         version: "v1.0.0",
-        icon: `<img src="icon 1.png" alt="行为录制精灵图标" style="width: 100%; height: 100%; object-fit: cover;">`,
-        screenshot: "截图 1.png",
+        icon: `<img src="img/icon 1.png" alt="行为录制精灵图标" style="width: 100%; height: 100%; object-fit: cover;">`,
+        screenshot: "img/截图 1.png",
         description: "一款功能强大的 macOS 鼠标宏录制和播放工具。支持录制鼠标移动、点击、拖拽和滚轮事件，自动保存录制内容，支持多种循环播放模式，并完美适配深色模式。",
         size: "约 2.5 MB",
         downloads: {
