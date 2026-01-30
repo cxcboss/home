@@ -695,10 +695,6 @@ button {
         gap: 16px;
     }
     
-    .nav-links a:not(.theme-toggle) {
-        display: none;
-    }
-    
     .hero {
         padding: 100px 0 60px;
     }

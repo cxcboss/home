@@ -8,7 +8,7 @@ const apps = [
         description: "一款功能强大的 macOS 鼠标宏录制和播放工具。支持录制鼠标移动、点击、拖拽和滚轮事件，自动保存录制内容，支持多种循环播放模式，并完美适配深色模式。",
         size: "约 2.5 MB",
         downloads: {
-            "macOS": "https://github.com/cxcboss/MacroRecorder/releases/download/v1.0.0/行为录制精灵.app.zip"
+            "macOS": "https://release-assets.githubusercontent.com/github-production-release-asset/1145910616/317f807e-3c88-4b1d-8759-86827945ec2f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-01-30T14%3A18%3A32Z&rscd=attachment%3B+filename%3Dapp.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-01-30T13%3A17%3A55Z&ske=2026-01-30T14%3A18%3A32Z&sks=b&skv=2018-11-09&sig=BgM%2BVVhOTWOX%2FIn4FMcKiQO63qsg1wyX1gei9HAUnp0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc2OTc4MDUzOSwibmJmIjoxNzY5NzgwMjM5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.UHnlxEoR1O90uzflPq8za7FUqMrV9t6dB6UI29r3kCg&response-content-disposition=attachment%3B%20filename%3Dapp.zip&response-content-type=application%2Foctet-stream"
         },
         features: ["鼠标录制", "自动保存", "循环播放", "深色模式"]
     }
