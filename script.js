@@ -1,63 +1,16 @@
 const apps = [
     {
         id: 1,
-        name: "效率助手",
-        version: "v2.1.0",
-        icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/>
-            <polyline points="12 6 12 12 16 14"/>
-        </svg>`,
-        screenshot: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-        description: "一款强大的效率工具，帮助你管理时间、任务和日程。支持番茄工作法、习惯养成、专注计时等功能，让你的工作和生活更加有序。",
-        size: "45.2 MB",
+        name: "行为录制精灵",
+        version: "v1.0.0",
+        icon: `<img src="icon 1.png" alt="行为录制精灵图标" style="width: 32px; height: 32px; object-fit: contain;">`,
+        screenshot: "截图 1.png",
+        description: "一款功能强大的 macOS 鼠标宏录制和播放工具。支持录制鼠标移动、点击、拖拽和滚轮事件，自动保存录制内容，支持多种循环播放模式，并完美适配深色模式。",
+        size: "约 2.5 MB",
         downloads: {
-            "Windows": "https://example.com/download/efficiency-helper-win.exe",
-            "macOS": "https://example.com/download/efficiency-helper-mac.dmg",
-            "Linux": "https://example.com/download/efficiency-helper-linux.deb",
-            "Android": "https://example.com/download/efficiency-helper-android.apk",
-            "iOS": "https://example.com/download/efficiency-helper-ios.ipa"
+            "macOS": "https://github.com/cxcboss/MacroRecorder/releases/latest/download/行为录制精灵.app.zip"
         },
-        features: ["番茄工作法", "任务管理", "习惯追踪", "数据同步"]
-    },
-    {
-        id: 2,
-        name: "代码笔记",
-        version: "v1.8.0",
-        icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-            <polyline points="10 9 9 9 8 9"/>
-        </svg>`,
-        screenshot: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
-        description: "专为开发者设计的代码笔记应用。支持多种编程语言语法高亮、代码片段管理、Markdown 写作，以及跨设备同步。",
-        size: "32.8 MB",
-        downloads: {
-            "Windows": "https://example.com/download/code-notes-win.exe",
-            "macOS": "https://example.com/download/code-notes-mac.dmg",
-            "Linux": "https://example.com/download/code-notes-linux.deb",
-            "Web": "https://example.com/code-notes-web"
-        },
-        features: ["语法高亮", "代码片段", "Markdown", "云同步"]
-    },
-    {
-        id: 3,
-        name: "媒体播放器",
-        version: "v3.0.0",
-        icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polygon points="5 3 19 12 5 21 5 3"/>
-        </svg>`,
-        screenshot: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=600&h=400&fit=crop",
-        description: "一款简洁优雅的媒体播放器，支持几乎所有音频和视频格式。拥有精美的界面、强大的解码能力和流畅的播放体验。",
-        size: "68.5 MB",
-        downloads: {
-            "Windows": "https://example.com/download/media-player-win.exe",
-            "macOS": "https://example.com/download/media-player-mac.dmg",
-            "Android": "https://example.com/download/media-player-android.apk",
-            "iOS": "https://example.com/download/media-player-ios.ipa"
-        },
-        features: ["多格式支持", "无损播放", "播放列表", "字幕匹配"]
+        features: ["鼠标录制", "自动保存", "循环播放", "深色模式"]
     }
 ];
 
@@ -105,7 +58,7 @@ function createAppCard(app) {
         <img class="app-screenshot" src="${app.screenshot}" alt="${app.name} 截图" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
         <div class="app-content">
             <div class="app-header">
-                <div class="app-icon">
+                <div class="app-icon" style="padding: 8px;">
                     ${app.icon}
                 </div>
                 <div class="app-info">
@@ -160,7 +113,7 @@ function openModal(appId) {
     modalBody.innerHTML = `
         <img class="modal-screenshot" src="${app.screenshot}" alt="${app.name} 截图" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
         <div class="modal-header">
-            <div class="modal-icon">
+            <div class="modal-icon" style="padding: 12px;">
                 ${app.icon}
             </div>
             <div>
@@ -169,6 +122,12 @@ function openModal(appId) {
             </div>
         </div>
         <p class="modal-description">${app.description}</p>
+        <div class="app-features">
+            <h4 style="font-size: 0.875rem; font-weight: 600; margin-bottom: 12px; color: var(--text-secondary);">功能特性</h4>
+            <div class="features-list">
+                ${app.features.map(f => `<span class="feature-tag">${f}</span>`).join('')}
+            </div>
+        </div>
         <div class="modal-meta">
             <div class="modal-meta-item">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -194,7 +153,7 @@ function openModal(appId) {
                 </svg>
                 下载 for ${recommendedPlatform}
             </a>
-            <a href="https://github.com/cxcboss" class="btn btn-secondary" target="_blank">
+            <a href="https://github.com/cxcboss/MacroRecorder" class="btn btn-secondary" target="_blank">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                 </svg>

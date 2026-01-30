@@ -654,6 +654,25 @@ button {
     color: var(--primary-color);
 }
 
+.app-features {
+    margin-bottom: 20px;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.feature-tag {
+    padding: 6px 12px;
+    background: var(--primary-bg);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
 @media (max-width: 768px) {
     .nav-links {
         gap: 16px;
