@@ -11,6 +11,19 @@ const apps = [
             "macOS": "https://github.com/cxcboss/MacroRecorder/releases/download/v1.0.0/app.zip"
         },
         features: ["鼠标录制", "自动保存", "循环播放", "深色模式"]
+    },
+    {
+        id: 2,
+        name: "OPPO主题打包",
+        version: "v1.0",
+        icon: `<img src="img/icon 2.png" alt="OPPO主题打包图标" style="width: 100%; height: 100%; object-fit: cover;">`,
+        screenshot: "img/截图 2.png",
+        description: "OPPO 主题文件打包工具。将零散的主题文件打包成可直接安装的 OPPO 主题格式，操作简单，支持批量处理。",
+        size: "约 5.2 MB",
+        downloads: {
+            "macOS": "https://github.com/cxcboss/OPPOthemezip/releases/download/1/OPPO.app.zip"
+        },
+        features: ["主题打包", "批量处理", "格式转换", "简单易用"]
     }
 ];
 
