@@ -3,12 +3,12 @@ const apps = [
         id: 1,
         name: "行为录制精灵",
         version: "v1.0.0",
-        icon: `<img src="icon 1.png" alt="行为录制精灵图标" style="width: 32px; height: 32px; object-fit: contain;">`,
+        icon: `<img src="icon 1.png" alt="行为录制精灵图标" style="width: 100%; height: 100%; object-fit: cover;">`,
         screenshot: "截图 1.png",
         description: "一款功能强大的 macOS 鼠标宏录制和播放工具。支持录制鼠标移动、点击、拖拽和滚轮事件，自动保存录制内容，支持多种循环播放模式，并完美适配深色模式。",
         size: "约 2.5 MB",
         downloads: {
-            "macOS": "https://release-assets.githubusercontent.com/github-production-release-asset/1145910616/2088a5ba-7571-40e1-9e36-e008dce0b981?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-01-30T13%3A49%3A21Z&rscd=attachment%3B+filename%3Ddefault.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-01-30T12%3A48%3A54Z&ske=2026-01-30T13%3A49%3A21Z&sks=b&skv=2018-11-09&sig=xXEb6nt5gRYT%2Btdfy72HUZBgw%2FyU3zy7QxDRUhIKx54%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc2OTc3ODQ0OSwibmJmIjoxNzY5Nzc4MTQ5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.GIHSChADjDhguZRxppwxrIADEUHn5v91YaKuFw3iInY&response-content-disposition=attachment%3B%20filename%3Ddefault.zip&response-content-type=application%2Foctet-stream"
+            "macOS": "https://github.com/cxcboss/MacroRecorder/releases/download/v1.0.0/行为录制精灵.app.zip"
         },
         features: ["鼠标录制", "自动保存", "循环播放", "深色模式"]
     }
@@ -58,7 +58,7 @@ function createAppCard(app) {
         <img class="app-screenshot" src="${app.screenshot}" alt="${app.name} 截图" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
         <div class="app-content">
             <div class="app-header">
-                <div class="app-icon" style="padding: 8px;">
+                <div class="app-icon">
                     ${app.icon}
                 </div>
                 <div class="app-info">
@@ -113,7 +113,7 @@ function openModal(appId) {
     modalBody.innerHTML = `
         <img class="modal-screenshot" src="${app.screenshot}" alt="${app.name} 截图" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
         <div class="modal-header">
-            <div class="modal-icon" style="padding: 12px;">
+            <div class="modal-icon">
                 ${app.icon}
             </div>
             <div>
