@@ -26,6 +26,20 @@ const apps = [
         },
         repoUrl: "https://github.com/cxcboss/OPPOthemezip",
         features: ["主题打包", "批量处理", "格式转换", "简单易用"]
+    },
+    {
+        id: 3,
+        name: "OPPO主题打包解包工具",
+        version: "v1.0",
+        icon: `<img src="img/icon 3.png" alt="OPPO主题打包解包工具图标" style="width: 100%; height: 100%; object-fit: cover;">`,
+        screenshot: "img/截图 3.png",
+        description: "OPPO 主题文件的打包与解包工具。支持解包.theme文件和主题文件夹，打包文件夹为.theme格式，兼容传统ZIP格式和新型theme-widget格式主题。",
+        size: "约 8.5 MB",
+        downloads: {
+            "macOS": "https://github.com/cxcboss/OPPOthemetool/releases/download/1/OPPO.app.zip"
+        },
+        repoUrl: "https://github.com/cxcboss/OPPOthemetool",
+        features: ["主题解包", "主题打包", "支持.theme文件", "跨平台兼容"]
     }
 ];
 
