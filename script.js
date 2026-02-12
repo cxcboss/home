@@ -50,7 +50,7 @@ const apps = [
         description: "一个简洁的 Android 应用，用于获取手机中所有有桌面图标的应用包名和应用名称。自动分类为第三方应用和系统应用，支持保存为文本文件。",
         size: "约 2.8 MB",
         downloads: {
-            "Android": "https://github.com/cxcboss/iconsname/releases/download/v1.0/app-release.apk"
+            "Android": "https://release-assets.githubusercontent.com/github-production-release-asset/1156337775/67161496-c09b-4eee-8b3f-07c0438579d6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-12T15%3A25%3A10Z&rscd=attachment%3B+filename%3Ddefault.apk&rsct=application%2Fvnd.android.package-archive&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-12T14%3A24%3A19Z&ske=2026-02-12T15%3A25%3A10Z&sks=b&skv=2018-11-09&sig=73UeTKvkFm5DYuvFcuXVCXwxZdUJr6hQDBdN629i%2FtU%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDkwODEyNiwibmJmIjoxNzcwOTA3ODI2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.4mXRu3jR_IfzHogHz8bschoj6JgKFmWxC13ceqqt4bw&response-content-disposition=attachment%3B%20filename%3Ddefault.apk&response-content-type=application%2Fvnd.android.package-archive"
         },
         repoUrl: "https://github.com/cxcboss/iconsname",
         features: ["获取应用包名", "自动分类", "保存文本文件", "暗色主题"]
