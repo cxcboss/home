@@ -40,6 +40,20 @@ const apps = [
         },
         repoUrl: "https://github.com/cxcboss/OPPOthemetool",
         features: ["主题解包", "主题打包", "支持.theme文件", "跨平台兼容"]
+    },
+    {
+        id: 4,
+        name: "图标包名提取器",
+        version: "v1.0",
+        icon: `<img src="img/icon 4.png" alt="图标包名提取器图标" style="width: 100%; height: 100%; object-fit: cover;">`,
+        screenshot: "img/截图 4.png",
+        description: "一个简洁的 Android 应用，用于获取手机中所有有桌面图标的应用包名和应用名称。自动分类为第三方应用和系统应用，支持保存为文本文件。",
+        size: "约 2.8 MB",
+        downloads: {
+            "Android": "https://github.com/cxcboss/iconsname/releases/download/v1.0/app-release.apk"
+        },
+        repoUrl: "https://github.com/cxcboss/iconsname",
+        features: ["获取应用包名", "自动分类", "保存文本文件", "暗色主题"]
     }
 ];
 
