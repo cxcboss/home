@@ -18,3 +18,4 @@
 
 MIT
 test Sat Jul  4 06:06:49 CST 2026
+test no-proxy Sat Jul  4 06:06:57 CST 2026
