@@ -1,12 +1,48 @@
+// 通过 GitHub Releases 分发。更新版本时同步更新 downloads 与 version/date 字段。
 const apps = [
     {
         id: 1,
+        name: "搬运蚁 AntBot",
+        version: "v1.3.9",
+        date: "2026-09-25",
+        size: "约 300 MB",
+        tag: "视频自动化",
+        icon: `<span class="icon-emoji">🐜</span>`,
+        banner: { gradient: "linear-gradient(135deg, #F686ED 0%, #764ba2 100%)", icon: `<span class="banner-emoji">🐜</span>` },
+        description: "视频自动化工作台：下载 → AI 字幕/剪辑/配音 → 多平台发布一条龙。支持手机远程操控、任务批量队列与一键自更新，整合 8+ 平台同步发布。",
+        downloads: {
+            "macOS": "https://github.com/cxcboss/AntBot-releases/releases/download/v1.3.9/antbot-macos-arm64.zip",
+            "Windows": "https://github.com/cxcboss/AntBot-releases/releases/download/v1.3.9/AntBot-1.3.9-win-x64.exe"
+        },
+        repoUrl: "https://github.com/cxcboss/AntBot-releases",
+        features: ["视频下载", "AI 字幕", "AI 剪辑配音", "多平台发布", "手机远程操控", "批量队列"]
+    },
+    {
+        id: 2,
+        name: "视频发布助手",
+        version: "v2.10.0",
+        date: "2026-08-12",
+        size: "约 66 KB",
+        tag: "浏览器扩展",
+        icon: `<img src="img/icon-vpe.png" alt="视频发布助手图标">`,
+        banner: { gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", icon: `<img src="img/icon-vpe.png" alt="">` },
+        description: "AI 驱动的 Chrome 扩展，自动发布视频到抖音和视频号。支持 AI 生成话题标签与文案、定时发布、批量队列发布，发布中断可断点恢复。",
+        downloads: {
+            "Chrome": "https://github.com/cxcboss/video-publish-extension/releases/download/v2.10.0/chrome-extension-v2.10.0.zip"
+        },
+        repoUrl: "https://github.com/cxcboss/video-publish-extension",
+        features: ["双平台发布", "AI 生成文案", "定时发布", "批量发布", "断点恢复", "失败重发"]
+    },
+    {
+        id: 3,
         name: "行为录制精灵",
         version: "v1.0.0",
-        icon: `<img src="img/icon 1.png" alt="行为录制精灵图标" style="width: 100%; height: 100%; object-fit: cover;">`,
-        screenshot: "img/截图 1.png",
-        description: "一款功能强大的 macOS 鼠标宏录制和播放工具。支持录制鼠标移动、点击、拖拽和滚轮事件，自动保存录制内容，支持多种循环播放模式，并完美适配深色模式。",
-        size: "约 2.5 MB",
+        date: "2026-01-30",
+        size: "约 0.5 MB",
+        tag: "macOS 工具",
+        icon: `<img src="img/icon 1.png" alt="行为录制精灵图标">`,
+        banner: { img: "img/截图 1.png" },
+        description: "macOS 鼠标宏录制和播放工具，精确记录鼠标移动、点击、拖拽和滚轮事件，自动保存录制内容，支持多种循环播放模式，完美适配深色模式。",
         downloads: {
             "macOS": "https://github.com/cxcboss/MacroRecorder/releases/download/v1.0.0/app.zip"
         },
@@ -14,46 +50,100 @@ const apps = [
         features: ["鼠标录制", "自动保存", "循环播放", "深色模式"]
     },
     {
-        id: 2,
-        name: "OPPO主题打包",
+        id: 4,
+        name: "ClipboardTool",
         version: "v1.0",
-        icon: `<img src="img/icon 2.png" alt="OPPO主题打包图标" style="width: 100%; height: 100%; object-fit: cover;">`,
-        screenshot: "img/截图 2.png",
-        description: "OPPO 主题文件打包工具。将零散的主题文件打包成可直接安装的 OPPO 主题格式，操作简单，支持批量处理。",
-        size: "约 5.2 MB",
+        date: "2026-03-22",
+        size: "约 176 KB",
+        tag: "macOS 工具",
+        icon: `<img src="img/icon-clipboard.png" alt="ClipboardTool 图标">`,
+        banner: { gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)", icon: `<img src="img/icon-clipboard.png" alt="">` },
+        description: "macOS 剪贴板管理工具，自动记录复制历史，支持全局热键快速唤出窗口一键粘贴。数据本地存储保护隐私，支持开机自启动。",
         downloads: {
-            "macOS": "https://github.com/cxcboss/OPPOthemezip/releases/download/1/OPPO.app.zip"
+            "macOS": "https://github.com/cxcboss/ClipboardTool/releases/download/1/app.zip"
         },
-        repoUrl: "https://github.com/cxcboss/OPPOthemezip",
-        features: ["主题打包", "批量处理", "格式转换", "简单易用"]
+        repoUrl: "https://github.com/cxcboss/ClipboardTool",
+        features: ["复制历史", "全局热键", "一键粘贴", "本地存储", "开机自启"]
     },
     {
-        id: 3,
-        name: "OPPO主题打包解包工具",
+        id: 5,
+        name: "图缩 Zipic",
+        version: "v1.0.1",
+        date: "2026-05-07",
+        size: "约 1.1 MB",
+        tag: "macOS 工具",
+        icon: `<img src="img/icon-zipic.png" alt="图缩 Zipic 图标">`,
+        banner: { gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)", icon: `<img src="img/icon-zipic.png" alt="">` },
+        description: "原生 macOS 图片压缩工具（图缩），基于 SwiftUI + AppKit + ImageIO。支持批量压缩多种图片格式，可按压缩强度或目标文件大小压缩，原生支持 Apple Silicon。",
+        downloads: {
+            "macOS": "https://github.com/cxcboss/Zipic/releases/download/v1.0.1/Zipic-arm64.zip"
+        },
+        repoUrl: "https://github.com/cxcboss/Zipic",
+        features: ["批量压缩", "按强度压缩", "目标大小压缩", "多格式支持", "Apple Silicon"]
+    },
+    {
+        id: 6,
+        name: "OPPO 主题工具",
         version: "v1.0",
-        icon: `<img src="img/icon 3.png" alt="OPPO主题打包解包工具图标" style="width: 100%; height: 100%; object-fit: cover;">`,
-        screenshot: "img/截图 3.png",
-        description: "OPPO 主题文件的打包与解包工具。支持解包.theme文件和主题文件夹，打包文件夹为.theme格式，兼容传统ZIP格式和新型theme-widget格式主题。",
-        size: "约 8.5 MB",
+        date: "2026-02-01",
+        size: "约 105 KB",
+        tag: "macOS 工具",
+        icon: `<img src="img/icon 3.png" alt="OPPO 主题工具图标">`,
+        banner: { img: "img/截图 3.png" },
+        description: "OPPO 主题文件的解包与打包工具，支持解包 .theme 文件和主题文件夹，打包文件夹为 .theme 格式，兼容传统 ZIP 格式和新型 theme-widget 格式主题。",
         downloads: {
             "macOS": "https://github.com/cxcboss/OPPOthemetool/releases/download/1/OPPO.app.zip"
         },
         repoUrl: "https://github.com/cxcboss/OPPOthemetool",
-        features: ["主题解包", "主题打包", "支持.theme文件", "跨平台兼容"]
+        features: ["主题解包", "主题打包", "支持 .theme 文件", "拖放操作"]
     },
     {
-        id: 4,
+        id: 7,
+        name: "OPPO 主题打包",
+        version: "v1.0",
+        date: "2026-01-30",
+        size: "约 246 KB",
+        tag: "macOS 工具",
+        icon: `<img src="img/icon 2.png" alt="OPPO 主题打包图标">`,
+        banner: { img: "img/截图 2.png" },
+        description: "OPPO 主题文件打包工具。将零散的主题文件夹快速打包成可直接安装的 OPPO 主题格式，拖放操作，简单易用。",
+        downloads: {
+            "macOS": "https://github.com/cxcboss/OPPOthemezip/releases/download/1/OPPO.app.zip"
+        },
+        repoUrl: "https://github.com/cxcboss/OPPOthemezip",
+        features: ["主题打包", "拖放操作", "格式转换", "简单易用"]
+    },
+    {
+        id: 8,
         name: "图标包名提取器",
         version: "v1.0",
-        icon: `<img src="img/icon 4.png" alt="图标包名提取器图标" style="width: 100%; height: 100%; object-fit: cover;">`,
-        screenshot: "img/截图 4.png",
-        description: "一个简洁的 Android 应用，用于获取手机中所有有桌面图标的应用包名和应用名称。自动分类为第三方应用和系统应用，支持保存为文本文件。",
-        size: "约 2.8 MB",
+        date: "2026-02-12",
+        size: "约 5.9 MB",
+        tag: "Android 工具",
+        icon: `<img src="img/icon 4.png" alt="图标包名提取器图标">`,
+        banner: { img: "img/截图 4.png" },
+        description: "Android 应用图标包名提取器，获取手机中所有有桌面图标的应用包名和应用名称，自动分类为第三方应用和系统应用，支持导出为文本文件。",
         downloads: {
-            "Android": "https://release-assets.githubusercontent.com/github-production-release-asset/1156337775/67161496-c09b-4eee-8b3f-07c0438579d6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-12T15%3A25%3A10Z&rscd=attachment%3B+filename%3Ddefault.apk&rsct=application%2Fvnd.android.package-archive&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-12T14%3A24%3A19Z&ske=2026-02-12T15%3A25%3A10Z&sks=b&skv=2018-11-09&sig=73UeTKvkFm5DYuvFcuXVCXwxZdUJr6hQDBdN629i%2FtU%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDkwODEyNiwibmJmIjoxNzcwOTA3ODI2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.4mXRu3jR_IfzHogHz8bschoj6JgKFmWxC13ceqqt4bw&response-content-disposition=attachment%3B%20filename%3Ddefault.apk&response-content-type=application%2Fvnd.android.package-archive"
+            "Android": "https://github.com/cxcboss/iconsname/releases/download/1.0/default.apk"
         },
         repoUrl: "https://github.com/cxcboss/iconsname",
-        features: ["获取应用包名", "自动分类", "保存文本文件", "暗色主题"]
+        features: ["获取应用包名", "自动分类", "导出文本文件", "暗色主题"]
+    },
+    {
+        id: 9,
+        name: "晕车检测器",
+        version: "在线版",
+        date: "",
+        size: "网页应用，无需下载",
+        tag: "Web 工具",
+        icon: `<span class="icon-emoji">🚗</span>`,
+        banner: { img: "img/banner-msd.webp" },
+        description: "驾驶舒适度实时检测工具，基于手机传感器检测晕车程度并给出预警。打开网页即用，无需安装任何应用。",
+        downloads: {
+            "Web": "https://onebugmanai.online/"
+        },
+        repoUrl: "https://github.com/cxcboss/motion-sickness-detector",
+        features: ["实时检测", "手机传感器", "晕车预警", "免安装"]
     }
 ];
 
@@ -62,6 +152,14 @@ const appsGrid = document.getElementById('appsGrid');
 const appModal = document.getElementById('appModal');
 const modalBody = document.getElementById('modalBody');
 const modalClose = document.getElementById('modalClose');
+const searchInput = document.getElementById('searchInput');
+const filterChips = document.getElementById('filterChips');
+const statApps = document.getElementById('statApps');
+const statPlatforms = document.getElementById('statPlatforms');
+
+let activePlatform = '全部';
+
+const PLATFORM_LABELS = { "Web": "在线使用", "Chrome": "下载扩展" };
 
 function getUserPlatform() {
     const platform = navigator.platform.toLowerCase();
@@ -76,7 +174,7 @@ function getUserPlatform() {
 function initTheme() {
     const savedTheme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (savedTheme) {
         document.documentElement.setAttribute('data-theme', savedTheme);
     } else if (systemPrefersDark) {
@@ -87,9 +185,16 @@ function initTheme() {
 function toggleTheme() {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
+
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
+}
+
+function renderBanner(app, className) {
+    if (app.banner.img) {
+        return `<img class="${className}" src="${app.banner.img}" alt="${app.name} 截图" onerror="this.outerHTML='<div class=&quot;app-banner banner-fallback&quot;>🖥️</div>'">`;
+    }
+    return `<div class="app-banner ${className}" style="background:${app.banner.gradient}"><div class="banner-icon">${app.banner.icon}</div></div>`;
 }
 
 function createAppCard(app) {
@@ -98,7 +203,7 @@ function createAppCard(app) {
     card.style.cursor = 'pointer';
     card.onclick = () => openModal(app.id);
     card.innerHTML = `
-        <img class="app-screenshot" src="${app.screenshot}" alt="${app.name} 截图" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+        ${renderBanner(app, 'app-screenshot')}
         <div class="app-content">
             <div class="app-header">
                 <div class="app-icon">
@@ -106,38 +211,58 @@ function createAppCard(app) {
                 </div>
                 <div class="app-info">
                     <h3 class="app-name">${app.name}</h3>
-                    <span class="app-version">${app.version}</span>
+                    <span class="app-version">${app.version}${app.date ? ' · ' + app.date : ''}</span>
                 </div>
+                <span class="app-tag">${app.tag}</span>
             </div>
             <p class="app-description">${app.description}</p>
             <div class="app-meta">
-                <span class="meta-tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                        <polyline points="7 10 12 15 17 10"/>
-                        <line x1="12" y1="15" x2="12" y2="3"/>
-                    </svg>
-                    ${app.size}
-                </span>
-                <span class="meta-tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                        <line x1="8" y1="21" x2="16" y2="21"/>
-                        <line x1="12" y1="17" x2="12" y2="21"/>
-                    </svg>
-                    ${Object.keys(app.downloads)[0]}
-                </span>
+                ${Object.keys(app.downloads).map(p => `<span class="platform-chip">${p}</span>`).join('')}
+                <span class="meta-tag">${app.size}</span>
             </div>
         </div>
     `;
     return card;
 }
 
+function getFilteredApps() {
+    const kw = (searchInput?.value || '').trim().toLowerCase();
+    return apps.filter(app => {
+        const platformOk = activePlatform === '全部' || Object.keys(app.downloads).includes(activePlatform);
+        const text = `${app.name} ${app.description} ${app.features.join(' ')} ${app.tag}`.toLowerCase();
+        return platformOk && (!kw || text.includes(kw));
+    });
+}
+
 function renderApps() {
+    const list = getFilteredApps();
     appsGrid.innerHTML = '';
-    apps.forEach(app => {
+    if (!list.length) {
+        appsGrid.innerHTML = `<div class="empty-state">🔍 没有找到匹配的应用，换个关键词试试</div>`;
+        return;
+    }
+    list.forEach(app => {
         appsGrid.appendChild(createAppCard(app));
     });
+}
+
+function renderFilterChips() {
+    const platforms = ['全部', ...new Set(apps.flatMap(a => Object.keys(a.downloads)))];
+    filterChips.innerHTML = platforms.map(p =>
+        `<button class="chip ${p === activePlatform ? 'active' : ''}" data-platform="${p}">${p}</button>`
+    ).join('');
+    filterChips.querySelectorAll('.chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+            activePlatform = chip.dataset.platform;
+            renderFilterChips();
+            renderApps();
+        });
+    });
+}
+
+function renderStats() {
+    statApps.textContent = apps.length;
+    statPlatforms.textContent = new Set(apps.flatMap(a => Object.keys(a.downloads))).size;
 }
 
 function openModal(appId) {
@@ -153,15 +278,17 @@ function openModal(appId) {
         return `<button class="platform-btn ${isRecommended ? 'active' : ''}" data-platform="${platform}">${platform}</button>`;
     }).join('');
 
+    const actionLabel = (p) => PLATFORM_LABELS[p] || `下载 for ${p}`;
+
     modalBody.innerHTML = `
-        <img class="modal-screenshot" src="${app.screenshot}" alt="${app.name} 截图" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'">
+        ${renderBanner(app, 'modal-screenshot')}
         <div class="modal-header">
             <div class="modal-icon">
                 ${app.icon}
             </div>
             <div>
                 <h2 class="modal-title">${app.name}</h2>
-                <span class="modal-version">${app.version}</span>
+                <span class="modal-version">${app.version}${app.date ? ' · 更新于 ' + app.date : ''}</span>
             </div>
         </div>
         <p class="modal-description">${app.description}</p>
@@ -178,23 +305,24 @@ function openModal(appId) {
                     <polyline points="7 10 12 15 17 10"/>
                     <line x1="12" y1="15" x2="12" y2="3"/>
                 </svg>
-                <span>大小: ${app.size}</span>
+                <span>${app.size}</span>
             </div>
         </div>
+        ${platforms.length > 1 ? `
         <div class="platform-selector">
             <label>选择版本:</label>
             <div class="platform-options">
                 ${platformOptions}
             </div>
-        </div>
+        </div>` : ''}
         <div class="modal-actions">
-            <a href="${app.downloads[recommendedPlatform]}" class="btn btn-primary" id="downloadBtn" onclick="trackDownload('${app.name}', '${recommendedPlatform}')">
+            <a href="${app.downloads[recommendedPlatform]}" class="btn btn-primary" id="downloadBtn" ${recommendedPlatform === 'Web' ? 'target="_blank"' : ''} onclick="trackDownload('${app.name}', '${recommendedPlatform}')">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                     <polyline points="7 10 12 15 17 10"/>
                     <line x1="12" y1="15" x2="12" y2="3"/>
                 </svg>
-                下载 for ${recommendedPlatform}
+                ${actionLabel(recommendedPlatform)}
             </a>
             <a href="${app.repoUrl}" class="btn btn-secondary" target="_blank">
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -219,7 +347,7 @@ function openModal(appId) {
                     <polyline points="7 10 12 15 17 10"/>
                     <line x1="12" y1="15" x2="12" y2="3"/>
                 </svg>
-                下载 for ${platform}
+                ${actionLabel(platform)}
             `;
         });
     });
@@ -249,8 +377,13 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+searchInput?.addEventListener('input', renderApps);
+
 window.addEventListener('load', () => {
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
     initTheme();
+    renderStats();
+    renderFilterChips();
     renderApps();
 });
 
